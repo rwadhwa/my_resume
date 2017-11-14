@@ -8,18 +8,16 @@ def home():
 
 
 @app.route('/courses')
-def courses():
-    courses = [
-        ['Misy350', 'Web Application Development',
-           'Learning web development, using full stack coding'],
-        ['MISY330', 'Database Design & Implementation',
-            'Learning access and sql databases'],
-        ['BUAD306', 'Intro to Marketing',
-           'Learn Fundamental Marketing Concepts'],
-        ['Buad309', 'Intro to Organizational Behavior',
-            'Examines individual, group, and organizational determinants of work behavior in organizations.']
+def get_all_courses():
+    courses =[
+    'MISY330',
+    'MISY350',
+    'Buad309',
+    'BUAD301'
     ]
-    return render_template('courses.html', courses=courses)
+    return render_template('courses.html', courses = courses)
+
+
 
 @app.route('/about')
 def about():
