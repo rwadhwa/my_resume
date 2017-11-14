@@ -1,0 +1,59 @@
+{% extends "base-structure.html" %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block head%}
+  {{super()}}
+  <style>
+    body {
+      padding-top: 54px;
+    }
+
+    #intro {
+      padding-top: 15px;
+    }
+
+  </style>
+{% endblock %}
+
+{% block page_content %}
+<div class="container">
+   <h1 class="mt-5"><i class="fa fa-paper-plane" aria-hidden="true"></i> Raveena's Resume</h1>
+   <h2>Education</h2>
+   <p>Univeristy of Delaware</p>
+   <p>Bachelor of Science, Management Information Systems</p>
+   <p>GPA: 3.58</p>
+   <h2>Work Experience</h2>
+   <p>University of Delaware Office of Disability Support Services </p>
+   <p>Student Worker
+     <ul>
+       <li>Collaborate directly with the Assistive Technology Coordinator to create over 30, alternate textbook formats per semester</li>
+       <li>Answer telephone calls and respond to questions to facilitate University of Delaware staff and students to ensure that proper accommodations are met</li>
+       <li>Safeguard exams taken at accommodation center, and guarantee quick and secure delivery to professors for thousands of students</li>
+       <li>Consummate various other office tasks, including: greeting and directing visitors, filing, copying, and laminating</li>
+     </ul></p>
+
+    <p> Super Discount Liquor Store and Bar </p>
+    <p>Manager/Cashier
+      <ul>
+        <li>Assisted in completing on average 600 cash or credit transactions daily</li>
+        <li>Staffed, trained, and managed 4 employees</li>
+        <li>Assisted owner in end of day operations, including balancing the cash register</li>
+      </ul></p>
+
+  <h2>Skills</h2>
+  <p>
+    <ul>
+      <li>Proficient in Mac OS, Excel, Word, Access, and PowerPoint, Adobe DC, Kurzweil 3000, Abbey Fine Reader</li>
+      <li>Knowledgeable of Python, Java, HTML, CSS, R Statistical Computing, Database Design and Implementation</li>
+      <li>Working skills in Mathematica and Minitab</li>
+    </ul>
+  </p>
+
+<h2>Contact:</h2>
+<h2 class="mt-6"><a href="https://www.linkedin.com/in/raveenawadhwa/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></h2>
+
+ </div>
+{% endblock %}
